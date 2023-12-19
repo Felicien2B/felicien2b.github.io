@@ -31,7 +31,7 @@ body {
   }
   
   .person img:hover {
-  transform: scale(1.1); /* Modifiez le facteur de zoom selon vos préférences */
+  transform: scale(1.1);
   }
 
   .person p {
