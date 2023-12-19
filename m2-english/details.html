@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Détails de la personne</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Détails de la personne</h1>
+  <div class="person-details" id="personDetails">
+    <!-- Le contenu des détails de la personne sera rempli ici avec JavaScript -->
+  </div>
+  <a href="index.html">Retour à l'accueil</a>
+</div>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const personId = parseInt(urlParams.get('id'));
+
+  const people = [
+    {
+      image: 'amine2',
+      name: 'Amine Maourid',
+      age: '30 yo, 01/01/1993',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Python',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'PIX',
+      interests: 'Sports',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Dimitri Denis',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'edouard2',
+      name: 'Chevenslove Edouard',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'felicien2',
+      name: 'Félicien Bertrand',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'focardi2',
+      name: 'François-Philippe Focardi',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+    {
+      image: 'dimitri2',
+      name: 'Jane Doe',
+      age: '35 yo, 01/01/1988',
+      placeOfBirth: 'Paris, France',
+      codingStrengths: 'Java',
+      codingWeaknesses: 'IA',
+      biggestAchievement: 'Hackathon',
+      interests: 'Games',
+    },
+  ];
+
+  const person = people[personId - 1];
+  const personDetailsDiv = document.getElementById('personDetails');
+
+  const personDetailsHTML = `
+    <img src="./images/${person.image}.png" alt="${person.name}">
+    <h2>${person.name}</h2>
+    <p>Details: ${person.age}, ${person.placeOfBirth}, ${person.codingStrengths}, ${person.codingWeaknesses}, ${person.biggestAchievement}, ${person.interests}</p>
+  `;
+
+  personDetailsDiv.innerHTML = personDetailsHTML;
+</script>
+
+</body>
+</html>

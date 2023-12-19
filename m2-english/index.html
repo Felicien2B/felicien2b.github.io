@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M2 Info</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>M2 Info</h1>
+  <div class="gallery">
+    <div class="person" onclick="showDetails(1)">
+         <img src="images/amine1.png" alt="Person 1">
+        <p>Amine Maourid</p>
+    </div>
+    <div class="person" onclick="showDetails(2)">
+        <img src="images/dimitri1.png" alt="Person 2">
+        <p>Dimitri Denis</p>
+    </div>
+    <div class="person" onclick="showDetails(3)">
+        <img src="images/edouard1.png" alt="Person 3">
+        <p>Chevenslove Edouard</p>
+    </div>
+    <div class="person" onclick="showDetails(4)">
+        <img src="images/felicien1.png" alt="Person 4">
+        <p>Félicien Bertrand</p>
+    </div>
+    <div class="person" onclick="showDetails(5)">
+        <img src="images/focardi1.png" alt="Person 5">
+        <p>François-Philippe Focardi</p>
+    </div>
+    <div class="person" onclick="showDetails(6)">
+        <img src="images/fode1.png" alt="Person 6">
+        <p>Fode Doumbouya</p>
+    </div>
+    <div class="person" onclick="showDetails(7)">
+        <img src="images/idrice1.png" alt="Person 7">
+        <p>Idricealy Mourtadhoi</p>
+    </div>
+    <div class="person" onclick="showDetails(8)">
+        <img src="images/jean1.png" alt="Person 8">
+        <p>Jean Bertrand</p>
+    </div>
+    <div class="person" onclick="showDetails(9)">
+        <img src="images/jeank1.png" alt="Person 9">
+        <p>Jean Khoge</p>
+    </div>
+    <div class="person" onclick="showDetails(10)">
+        <img src="images/doublej1.png" alt="Person 10">
+        <p>Jean-José Forconi</p>
+    </div>
+    <div class="person" onclick="showDetails(11)">
+        <img src="images/marc1.png" alt="Person 11">
+        <p>Marc Williams</p>
+    </div>
+    <div class="person" onclick="showDetails(12)">
+        <img src="images/pilou1.png" alt="Person 12">
+        <p>Pierre-Louis Squaglia</p>
+    </div>
+    <div class="person" onclick="showDetails(13)">
+        <img src="images/quentin1.png" alt="Person 13">
+        <p>Quentin Duriani</p>
+    </div>
+    <div class="person" onclick="showDetails(14)">
+        <img src="images/tom1.png" alt="Person 14">
+        <p>Tom Olivier</p>
+    </div>
+    <div class="person" onclick="showDetails(15)">
+        <img src="images/toussaint1.png" alt="Person 15">
+        <p>Toussaint Carlotti</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showDetails(personId) {
+    window.location.href = `details.html?id=${personId}`;
+  }
+</script>
+
+</body>
+</html>
