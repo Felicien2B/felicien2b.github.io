@@ -54,4 +54,14 @@ a:hover {
   background-color: #2980b9;
 }
 
-  
+/* Style spécifique pour les drapeaux */
+.flag-icon {
+  width: 20px; /* Ajustez la largeur des drapeaux selon vos besoins */
+  height: auto;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.person .flag-icon {
+  width: 25px; /* Ajustez la taille spécifique pour le contexte .person */
+}
